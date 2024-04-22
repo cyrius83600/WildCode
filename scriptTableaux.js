@@ -12,9 +12,11 @@ console.log('step 2 : ', step2);
 
 // step3 : Splice the array to replace 2 elements from index 5 with only one element : the letter 't'
 
-const step3 = step2.splice(5, 2, 't'); // making a copy
+ // making a copy
 // TODO : call splice on step3 with the correct arguments
 // step3.splice(...)
+step2.splice(5, 2, 't');
+const step3 = step2;
 console.log('step 3 : ', step3);
 
 // step4 : reverse the array
