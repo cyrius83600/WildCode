@@ -1,15 +1,84 @@
-const name = "David"; // ✅ Good!  
-const lastname = "Bruno"; // ❌ the keyword to declare the variable is missing 
+// Here are our Astro signs provided as a string.
 
-  
-  let biography = "Hi, I'm David Bruno from SF, I like to cook and meet new people."; // ❌ the variable name is not explicit. (this is David's biography)
+const aries = `♈`,
+  taurus = `♉`,
+  gemini = `♊`,
+  cancer = `♋`,
+  leo = `♌`,
+  virgo = `♍`,
+  libra = `♎`,
+  scorpio = `♏`,
+  sagittarius = `♐`,
+  capricorn = `♑`,
+  aquarius = `♒`,
+  pisces = `♓︎`;
+
+// In Western Astrology there are 12 signs, organized by Earth Elements (Eart, Water, Air, Fire) 
+// You are going to manipulate the following arrays along with this challenge:
+
+const fireSigns = [aries, leo];
+const earthSigns = [taurus, virgo, capricorn, sagittarius];
+const airSigns = [pisces, gemini, libra, aquarius];
+const waterSigns = [scorpio, pisces];
+
+/*  🏁 Add one final element to an array 
+    Sagittarius is missing from fire signs please add it at the 
+    END of the array and verify the result.
+*/
 
 
-  const avatar = "http://www.go.com/davif.png"; // ❌ the variable name is not explicit and the keyword is missing (this is David's profile picture)
 
-  let city = "San Francisco"; // ❌ the variable name is not explicit and the keyword is missing (try to guess what "San Francisco" could refer to)
+// ✒️ Write your code here
+fireSigns.push(`♐`);
+console.log(fireSigns[fireSigns.length - 1]);
 
-  let followers = 109; // ❌ the keyword to declare the variable is missing 
-  following = 200; // ❌ the keyword to declare the variable is missing 
 
-// 🏁 Exercise 02 - David is following one more account increment the total of following account
+console.log(
+  fireSigns[fireSigns.length - 1] === "♐"
+    ? "Good Answer ✅"
+    : "Wrong Answer ❌"
+);
+
+
+/* 🏁 Remove the last element of an array
+      Sagittarius should not be on earth Signs, please remove 
+      Sagittarius from the array, and verify the result.
+*/
+
+
+
+// ✒️ Write your code here
+earthSigns.pop();
+
+
+
+// the line below is for testing, don't touch it :)
+console.log(earthSigns[earthSigns.length - 1] !== "♐" ? "Good Answer ✅" : "Wrong Answer ❌");
+
+/* 🏁 Remove one element at the begining of an array
+      Pisces should not be on air Signs, please remove Pisces 
+      from the array, and verify the result.
+*/
+
+airSigns.shift("♓︎");
+
+// ✒️ Write your code here
+
+
+
+// the line below is for testing, don't touch it :)
+console.log(airSigns[0] !== "♓︎" ? "Good Answer ✅" : "Wrong Answer ❌");
+
+/*  🏁 Add one element at the beginning of an array
+    Cancer is missing from water signs please add it at the 
+    BEGINNING of the array and verify the result.
+*/
+
+
+
+// ✒️ Write your code here
+waterSigns.unshift("♋");
+
+
+// the line below is for testing, don't touch it :)
+console.log(waterSigns[0] === "♋" ? "Good Answer ✅" : "Wrong Answer ❌");
