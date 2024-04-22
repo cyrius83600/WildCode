@@ -10,6 +10,7 @@ const lastname = "Bruno"; // ❌ the keyword to declare the variable is missing
   let city = "San Francisco"; // ❌ the variable name is not explicit and the keyword is missing (try to guess what "San Francisco" could refer to)
 
   let followers = 109; // ❌ the keyword to declare the variable is missing 
-  following = 200; // ❌ the keyword to declare the variable is missing 
+  let following = 200;
+  following++; // ❌ the keyword to declare the variable is missing 
 
 // 🏁 Exercise 02 - David is following one more account increment the total of following account
