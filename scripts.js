@@ -9,10 +9,10 @@ function refactor(name) {
   return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
 }
 
-function refactorArray(array, callback) {
+function refactorArray(people, callback) {
   const arrayFactor = [];
-  for (let i = 0; i < arrayFactor.length; i++) {
-    arrayFactor.push(callback(arrayFactor[i]));
+  for (let i = 0; i < people.length; i++) {
+    arrayFactor.push(callback(people[i]));
   }
   return arrayFactor;
 }
