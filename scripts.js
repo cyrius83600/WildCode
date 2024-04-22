@@ -1,15 +1,19 @@
-const name = "David"; // ✅ Good!  
-const lastname = "Bruno"; // ❌ the keyword to declare the variable is missing 
+// Given an array of names of people but mixing lower case and upper case letters, you will have to:
+// - Create a function that contains the logic to refactor those names so it converts a name like `anTHoNY` to `Anthony`.
+// - A function that accepts two parameters: an array and a callback function that is in charge of refactoring all items inside that array
+// - Return the original array but with all names properly typed
 
-  
-  let biography = "Hi, I'm David Bruno from SF, I like to cook and meet new people."; // ❌ the variable name is not explicit. (this is David's biography)
+const people = ['JoHn', 'ChrISTiana', 'anThoNY', 'MARia', 'jaMeS', 'MIChaEl', 'jeNNIFeR'];
 
+function refactor(name) {
+  return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+}
 
-  const avatar = "http://www.go.com/davif.png"; // ❌ the variable name is not explicit and the keyword is missing (this is David's profile picture)
-
-  let city = "San Francisco"; // ❌ the variable name is not explicit and the keyword is missing (try to guess what "San Francisco" could refer to)
-
-  let followers = 109; // ❌ the keyword to declare the variable is missing 
-  following = 200; // ❌ the keyword to declare the variable is missing 
-
-// 🏁 Exercise 02 - David is following one more account increment the total of following account
+function refactorArray(array, callback) {
+  const arrayFactor = [];
+  for (let i = 0; i < arrayFactor.length; i++) {
+    arrayFactor.push(callback(arrayFactor[i]));
+  }
+  return arrayFactor;
+}
+console.log(refactorArray(people, refactor));
