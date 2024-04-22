@@ -1,16 +1,31 @@
-const name = "David"; // ✅ Good!  
-const lastname = "Bruno"; // ❌ the keyword to declare the variable is missing 
+const a = 3;
+let g = "Test";
+var x = 3;
 
-  
-  let biography = "Hi, I'm David Bruno from SF, I like to cook and meet new people."; // ❌ the variable name is not explicit. (this is David's biography)
+// Dans le cas ou l'on évalue uniquement le contenu 
+if(a == g && g ==x && x == a)
+{
+    console.log("Les trois variables sont identiques");
+}
+if((a == g && a!= x) || (a == x && g != x) || (g ==x && a != x))
+{
+    console.log("Deux des variables sont identiques");
+}
+if(a != g && g != x && x != a)
+{
+    console.log("toutes les variables sont différentes");
+}
 
-
-  const avatar = "http://www.go.com/davif.png"; // ❌ the variable name is not explicit and the keyword is missing (this is David's profile picture)
-
-  let city = "San Francisco"; // ❌ the variable name is not explicit and the keyword is missing (try to guess what "San Francisco" could refer to)
-
-  let followers = 109; // ❌ the keyword to declare the variable is missing 
-  let following = 200;
-  following++; // ❌ the keyword to declare the variable is missing 
-
-// 🏁 Exercise 02 - David is following one more account increment the total of following account
+// Dans le cas ou l'on évalue le contenu et le type
+if(a === g && g ==x && x === a)
+{
+    console.log("Les trois variables sont identiques");
+}
+if((a === g && a!== x) || (a === x && g !== x) || (g === x && a !== x))
+{
+    console.log("Deux des variables sont identiques");
+}
+if(a !== g && g !== x && x !== a)
+{
+    console.log("toutes les variables sont différentes");
+}
