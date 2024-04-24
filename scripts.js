@@ -29,7 +29,7 @@ const waterSigns = [scorpio, pisces];
 
 
 // ✒️ Write your code here
-fireSigns.push(`♐`);
+fireSigns.push(sagittarius);
 console.log(fireSigns[fireSigns.length - 1]);
 
 
@@ -60,7 +60,7 @@ console.log(earthSigns[earthSigns.length - 1] !== "♐" ? "Good Answer ✅" : "W
       from the array, and verify the result.
 */
 
-airSigns.shift("♓︎");
+airSigns.shift(pisces);
 
 // ✒️ Write your code here
 
@@ -77,7 +77,7 @@ console.log(airSigns[0] !== "♓︎" ? "Good Answer ✅" : "Wrong Answer ❌");
 
 
 // ✒️ Write your code here
-waterSigns.unshift("♋");
+waterSigns.unshift(cancer);
 
 
 // the line below is for testing, don't touch it :)
